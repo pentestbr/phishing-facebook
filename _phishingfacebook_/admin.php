@@ -3,7 +3,7 @@
 
 error_reporting(0);
 session_start();
-if($_SESSION["usuario"] == "caveiratech" && $_SESSION["senha"] == "caveiratech"){
+if($_SESSION["usuario"] == "admin" && $_SESSION["senha"] == "123"){
 if($_GET['logout'] == "s"){
 	session_destroy();
 	header('Location: ../');
