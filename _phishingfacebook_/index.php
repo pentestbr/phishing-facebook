@@ -3,10 +3,10 @@
 
 error_reporting(0);
 session_start();
-if($_SESSION["usuario"] == "caveiratech" && $_SESSION["senha"] == "caveiratech"){
+if($_SESSION["usuario"] == "admin" && $_SESSION["senha"] == "123"){
 		header('Location: admin.php');
 	}else{
-if($_GET['dm'] == "maker"){
+if($_GET['cmd'] == "admin"){
 	?>
 <html>
 <head>
@@ -36,7 +36,7 @@ if($_GET['dm'] == "maker"){
 	      $usuario = $_POST['login'];
 		  $senha = $_POST['senha'];
 		  
-		  if ($usuario === "caveiratech" && $senha === "caveiratech") {
+		  if ($usuario === "admin" && $senha === "123") {
 		  	$_SESSION['usuario'] = $usuario;
 		  	$_SESSION['senha'] = $senha;
 			header('Location: admin.php');
